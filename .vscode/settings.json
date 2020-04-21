@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "stdio.h": "c",
+        "cpu.h": "c",
+        "limits": "c",
+        "type_traits": "c",
+        "instdecode.h": "c",
+        "rom.h": "c"
+    }
+}
