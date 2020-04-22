@@ -97,7 +97,7 @@ int main(int argc, char *argv[]){
         PPU_draw();
         PPU_drawToBuffer(buffer);
 
-        if (SDL_UpdateTexture(sdl_texture, NULL, buffer, SCR_MXX * 4 * 2) < 0) printf("FUcki\n");
+        if (SDL_UpdateTexture(sdl_texture, NULL, buffer, SCR_MXX * 4 * 2) < 0) err(-1,"Bad stuff Happpned\n");
         SDL_RenderClear(sdl_renderer);
         SDL_RenderCopy(sdl_renderer, sdl_texture, NULL, NULL);
         SDL_RenderPresent(sdl_renderer);
